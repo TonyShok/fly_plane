@@ -9,16 +9,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
 # 设置包含目录
-include_directories(${CMAKE_SOURCE_DIR}/include)
+include_directories(${CMAKE_SOURCE_DIR})
 
 # 添加可执行文件
 add_executable(${PROJECT_NAME}
-    code/main.cpp
-    code/Player.cpp
-    code/Bullet.cpp
-    code/Shooter.cpp
-    code/Enemy.cpp
-    code/Laser.cpp
+    main.cpp
+    Player.cpp
+    Bullet.cpp
+    Shooter.cpp
+    Enemy.cpp
+    Laser.cpp
 )
 
 # 链接SFML库
